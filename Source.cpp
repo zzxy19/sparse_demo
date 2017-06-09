@@ -118,7 +118,6 @@ void matmul(struct MatrixElement matrix1[], int matrix2[], int matrix3[]) {
 }
 
 void run(double result[]) {
-	init();
 	/*
 	Task 1:
 		create a sparse matrix of size 40*40
@@ -151,6 +150,7 @@ void run(double result[]) {
 }
 
 int main() {
+	init();
 	double result[COL];
 	for (int i = 0; i < COL; i++) {
 		result[i] = 0.0;
